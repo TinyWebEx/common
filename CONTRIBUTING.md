@@ -90,7 +90,7 @@ If you have made your changes, please ensure that the unit tests still run. See 
 
 ### Coding guidelines
 
-As for simple indentation issues, please refer to the [editorconfig file](.editorconfig). Just use a [plugin](http://editorconfig.org/#download), if needed, for your editor.
+As for simple indentation issues, please refer to the _editorconfig file_. Just use a [plugin](http://editorconfig.org/#download), if needed, for your editor.
 
 Apart from that, there are some simple rules.
 
@@ -132,7 +132,7 @@ We use _Mocha_, _Chai_ and _Sinon_ for unit tests. However, you do not need to c
 * You'll see the `manifest.json`. Now change the address in the address bar to `moz-extension://<uuid here>/tests/index.html`. This is the test site, which then runs the tests automatically!
 * You do not need to install anything, test libraries are downloaded from the web, automatically. If that does not work, you may have the wrong `manifest.json`, which does not allow loading of these test frameworks. Make sure you have the dev version (`dev.json` in `scripts/manifests/`) loaded in the `src` dir of this add-on.
 
-Tests are defined in the [`src/tests/`](src/tests/) dir.
+Tests are defined in the `src/tests/` dir.
 
 Due to the fact that we use ES6 modules, [Mocha cannot yet run the tests on the command line](https://github.com/mochajs/mocha/issues/3006) though. We also do use the browser DOM and similar features, so running the tests outside of the browser, is not intended to be supported.
 
