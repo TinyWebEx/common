@@ -40,8 +40,8 @@ Note that the `amoScreenshots.csv` file refers to the screenshot descriptions yo
 
 ### Translation of wiki
 
-This project has a _wiki_ on GitHub. To translate it, just create the appropriate wiki pages in your local language.
-As GitHub does not allow multiple pages to have the same name, you have to adjust it. If the title is different in your language, you can just rename it. If it collides with another existing file, e.g. if the title is the same as in English, append the title with ` (<local language>)`, where `<local language>` is a placeholder for a proper identifier for your language that makes sense to your users. This identifier should be readable by humans and not be an abbreviation as it is displayed as a title on GitHub (i.e. _not_ `de_DE`) and it should also be translated (i.e. _not_ `German`, but `deutsch`). Capitalization and similar things should thus follow your local language. Also the appendix/bracket style (i.e. `(…)`) should follow your local Langauge. As such, if you e.g. always prefix such additional notes, then do it here, too.
+If the project has a _wiki_ on GitHub, you can usually translate it, too. To translate it, just create the appropriate wiki pages in your local language.
+As GitHub does not allow multiple pages to have the same name, you have to adjust it. If the title is different in your language, you can just rename it. If it collides with another existing file, e.g. if the title is the same as in English, append the title with your language name in brackets, i.e. ` (<local language>)`, where `<local language>` is a placeholder for a proper identifier for your language that makes sense to your users. This identifier should be readable by humans and not be an abbreviation as it is displayed as a title on GitHub (i.e. _not_ `de_DE`) and it should also be translated (i.e. _not_ `German`, but `deutsch`). Capitalization and similar things should thus follow your local language. Also the appendix/bracket style (i.e. `(…)`) should follow your local Langauge. As such, if you e.g. always prefix such additional notes, then do it here, too.
 Generally said, the whole title must just be translated, but does have to be unique.
 
 If you are done with that, do not forget to edit the `_Sidebar` file and add your language. Keep the English version at the top. The languages afterwards should be kept in alphabetical order. Do use the English name of your language as a heading and link to your newly created pages using their local name.
@@ -51,7 +51,7 @@ Do not forget that files in the project's main repository itself often refer to 
 ### Internationalisation of HTML files
 
 HTML files are easy to internationalize.
-You just have to add the custom `data-i18n` and add the [`__MSG_translationName__`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Internationalization#Predefined_messages) syntax for selecting the value. If the value is empty, the content of the tag will not be translated.
+You just have to add the custom `data-i18n` and add the [`__MSG_translationName__`](https://developer.mozilla.org/Add-ons/WebExtensions/Internationalization#Predefined_messages) syntax for selecting the value. If the value is empty, the content of the tag will not be translated.
 
 If the `data-i18n` value is present, it will additionally try to translate the hardcoded attributes in `localizedAttributes`, and check whether `data-i18n-attribute` (where `attribute` is an attribute like `alt`) exists and if so, replace the original attribute in the same way. Basically, just have a look at how it is done in the existing parts.
 
@@ -88,25 +88,23 @@ Developing/improving a WebExtension add-on is easy! **If you have ever made some
 
 If you have made your changes, please ensure that the unit tests still run. See [the section on testing](#tests) for the (easy) way to run them.
 
-### Coding guidelines
+### General coding guidelines
 
 As for simple indentation issues, please refer to the _editorconfig file_. Just use a [plugin](http://editorconfig.org/#download), if needed, for your editor.
 
-Apart from that, there are some simple rules.
-
-### General
+Apart from that, there are some simple rules: 
 * Do not introduce new unnecessary permissions. The add-on should require as few permissions as possible.
 * Keep the code small. Do not introduce big or unnecessary dependencies. (Better ask before you do.)
 * There is a loose width limit at 80 characters, except for HTML and text/Markdown files. HTML files should always be intended properly. "Loose limit" means I won't care if you add 3-5 characters more, but when the line becomes too long, you better split it on two lines, if it makes sense. Always prefer readability over such an arbitrary limit, however, so e.g. JSDOC can always be split onto the next line, while JS commands sometimes look better on a single line, even though it may be _a bit_ longer.
 
-#### JS
+### JavaScript
 * Use EcmaScript 2017. (so e.g. `await`/`async` are fine) Basically everything, which is supported by Firefox >= 60 can also be used.
 * We use [ESLint](https://eslint.org/). Please do use it to lint your files. It specifies all coding guidelines. If you use NodeJS, you can install the packages `eslint` and (if you want to write unit tests) `eslint-plugin-mocha` (see [writing tests](#writing-tests)).
   When something is not specified just use common sense and look at how other code in the project is written.
-* Especially, as we use a [CSP](src/manifest.json), please do _not_:
+* Especially, as we use a stritct [CSP](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy), please do _not_:
    * use inline JavaScript
    * use eval, or other insecure features
-   * modify the [CSP](src/manifest.json#L33) :wink:
+   * modify the CSP :wink:
 * We do use [ES6 Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/).
 * Avoid `this`, it mostly causes confusion. The pattern used here usually does not need `this`.
 * Use early return instead of nested if blocks to keep the code readable.
