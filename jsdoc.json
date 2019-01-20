@@ -3,6 +3,7 @@
         "plugins/markdown"
     ],
     "opts": {
+    	"access": "public",
     	"readme": "README.md",
         "template": "~/.npm-packages/lib/node_modules/docdash",
         "encoding": "utf8",
@@ -13,6 +14,9 @@
     "templates": {
         "cleverLinks": true,
         "monospaceLinks": false
+    },
+    "markdown": {
+         "idInHeadings": true
     },
     "docdash": {
         "search": true,
