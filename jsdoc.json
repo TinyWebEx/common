@@ -19,7 +19,7 @@
          "idInHeadings": true
     },
     "docdash": {
-        "search": true,
+        "search": false,
         "menu": {
             "All TinyWebExt modules": {
                 "href": "https://github.com/TinyWebEx/"
