@@ -1,0 +1,25 @@
+{
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "opts": {
+    	"readme": "README.md",
+        "template": "~/.npm-packages/lib/node_modules/docdash",
+        "encoding": "utf8",
+        "destination": "docs/",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": false
+    },
+    "docdash": {
+        "search": true,
+        "menu": {
+            "All TinyWebExt modules": {
+                "href": "https://github.com/TinyWebEx/"
+            }
+        }
+    }
+}
