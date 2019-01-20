@@ -19,6 +19,7 @@
          "idInHeadings": true
     },
     "docdash": {
+		"typedefs": true,
         "search": false,
         "menu": {
             "All TinyWebExt modules": {
