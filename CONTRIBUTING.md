@@ -83,7 +83,7 @@ git submodule update --init --recursive
 
 Developing/improving a WebExtension add-on is easy! **If you have ever made some stuff with HTML/CSS/JS you can do that, too!** It's built on the same technologies.
 
-* **Debug extension:** Just visit `about:debugging` and load the extension by selecting any file from the Web Extensions' dir. In our case, e.g. select `manifest.json` from the `src` dir. [See a video here.](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Your_first_WebExtension#Installing).
+* **Debug extension:** Just visit `about:debugging` and load the extension by selecting any file from the Web Extensions' dir. In our case, e.g. select `manifest.json` from the `src` dir. [See a video here](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Your_first_WebExtension#Installing).
 * **Change code:** When it is loaded you can just change the code (and press "Reload", if needed) and you'll see the result. That is it!
 
 If you have made your changes, please ensure that the unit tests still run. See [the section on testing](#tests) for the (easy) way to run them.
@@ -150,4 +150,3 @@ Here some simple rules:
 ### Various stuff
 
 * It is possible to use [symbolic links on Windows with git](https://stackoverflow.com/a/49913019/5008962). You have to make sure to enable that option at the installation of git for Windows and maybe need to re-clone the repo with `git clone -c core.symlinks=true <URL>`.
-
