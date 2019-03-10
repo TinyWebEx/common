@@ -88,6 +88,8 @@ Developing/improving a WebExtension add-on is easy! **If you have ever made some
 
 If you have made your changes, please ensure that the unit tests still run. See [the section on testing](#tests) for the (easy) way to run them.
 
+**Important:** The script in `scripts/make.sh` is only intended for creating releaqse ZIPs of the add-on. You do _not_ need to use it for development.
+
 ### Coding guidelines
 
 As for simple indentation issues, please refer to the _editorconfig file_. Just use a [plugin](http://editorconfig.org/#download), if needed, for your editor.
