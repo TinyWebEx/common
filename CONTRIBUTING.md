@@ -45,7 +45,7 @@ There are some small tips that can help you when translating.
 
 1. You do _not_ need to translate all old changelog entries, if that is too much work. (It's unlikely users even look at these old ones.) Rather focus on the latest changelog then (sometimes one is also kept for the current development state).
 2. Speaking of the changelogs, you do **not need to translate** any changelog Markdown files! I do so (and you can too), so one can just generate the corresponding HTML files out of the markdown ones. But, as the Markdown syntax is only used in GitHub release notes, which are only available in English, you do not have to do so. 
-3. Often, you can copy/take translations from [other add-ons](https://addons.mozilla.org/de/firefox/user/rugkme/), as common things like usual error messages (etc.) have already been translated by other's in one of my add-ons. Currently, [the _Offline QR Code Generator_](https://github.com/rugk/offline-qr-code/) has the most translations.
+3. Often, you can copy/take translations from [other add-ons](https://addons.mozilla.org/firefox/user/rugkme/), as common things like usual error messages (etc.) have already been translated by other's in one of my add-ons. Currently, [the _Offline QR Code Generator_](https://github.com/rugk/offline-qr-code/) has the most translations.
   Just pay attention to [credit the translators](#translator-credit-inside-of-add-on) correctly then. And please add a note to the PR description, so I know what you've done.
 
 ### Internationalisation of HTML files
