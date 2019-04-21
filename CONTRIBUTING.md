@@ -21,22 +21,13 @@ For example messages like "Learn more" may need special (and different) handling
 
 Please have look at [the "Writing for users" guide](https://design.firefox.com/photon/copy/writing-for-users.html) of the Firefox Photon Design for other rules you should adhere to. The [Mozilla localization style guide](https://mozilla-l10n.github.io/styleguides/) can also help.
 
-### Using HTML in translations
-
-**Attention: Often using HTML in translations is disabled due to security reasons.**
-
-If you need to use HTML in a translation, please prepend `!HTML!` in front of the text. It will only be parsed as HTML if you do this. Otherwise it will be displayed as text. A sentence could look like this:
-```json
-"boldSentence": {
-  "message": "!HTML! <b>This sentence is bold</b>"
-}
-```
-
 ### Translation of add-on listings
 
 All texts shown on AMO (addons.mozilla.org) are maintained in `assets/texts`. Again, you can use the English template there.
 The files have different formats, but all of them are easily translatable with any text editor.
 Note that the `amoScreenshots.csv` file refers to the screenshot descriptions you can see when you click on the screenshots of AMO. The first column there is the file name, which you can see in `assets/screenshots`, and _must not_ be translated.
+
+You can also translate the changelogs there. (but see [this tip about that](#what-not-to-translate))
 
 ### Translation of wiki
 
@@ -48,6 +39,15 @@ If you are done with that, do not forget to edit the `_Sidebar` file and add you
 
 Do not forget that files in the project's main repository itself often refer to the wiki, so remember to also replace the links in here.
 
+### What _not_ to translate
+
+There are some small tips that can help you when translating.
+
+1. You do _not_ need to translate all old changelog entries, if that is too much work. (It's unlikely users even look at these old ones.) Rather focus on the latest changelog then (sometimes one is also kept for the current development state).
+2. Speaking of the changelogs, you do **not need to translate** any changelog Markdown files! I do so (and you can too), so one can just generate the corresponding HTML files out of the markdown ones. But, as the Markdown syntax is only used in GitHub release notes, which are only available in English, you do not have to do so. 
+3. Often, you can copy/take translations from [other add-ons](https://addons.mozilla.org/de/firefox/user/rugkme/), as common things like usual error messages (etc.) have already been translated by other's in one of my add-ons. Currently, [the _Offline QR Code Generator_](https://github.com/rugk/offline-qr-code/) has the most translations.
+  Just pay attention to [credit the translators](#translator-credit-inside-of-add-on) correctly then. And please add a note to the PR description, so I know what you've done.
+
 ### Internationalisation of HTML files
 
 HTML files are easy to internationalize.
@@ -56,6 +56,15 @@ You just have to add the custom `data-i18n` and add the [`__MSG_translationName_
 If the `data-i18n` value is present, it will additionally try to translate the hardcoded attributes in `localizedAttributes`, and check whether `data-i18n-attribute` (where `attribute` is an attribute like `alt`) exists and if so, replace the original attribute in the same way. Basically, just have a look at how it is done in the existing parts.
 
 You should always hardcode an English fallback string in the HTML file, so it can use this, if all JS localization fails.
+
+Usually, you cannot use HTML in the translations. But you can keep the child elements and use them in your translation, see [the Localizer doc about this](https://github.com/TinyWebEx/Localizer#keeping-child-elements-in-html).
+
+Please see the [whole Localizer module doc](https://github.com/TinyWebEx/Localizer) that manages these for more information.
+
+### Further notes
+
+* Please try to use the typographically correct characters of your language. E.g. use the Unicode char `…` instead of `...`.
+* See also [how to credit yourself in the localization file](#translator-credit-inside-of-add-on).
 
 ## Coding
 
