@@ -152,3 +152,54 @@ Here some simple rules:
 ### Various stuff
 
 * It is possible to use [symbolic links on Windows with git](https://stackoverflow.com/a/49913019/5008962). You have to make sure to enable that option at the installation of git for Windows and maybe need to re-clone the repo with `git clone -c core.symlinks=true <URL>`.
+
+## Credit
+
+We always try to properly credit all contributors in several places. If someone was missed, feel free to let us now, so we can add yourself.
+
+There are several places:
+* [an extra file in the repo](#contributors-file)
+* the translator of the current language is [credited inside of the add-on](#translator-credit-inside-of-add-on)
+* if major changes* were contributed, you can also appear in the changelog later published to addons.mozilla.org and GitHub. It says e.g. this:
+  > * **New:** A thing™ has been added. ([#123](https://github.com/…/pull/123), thanks [@users](https://github.com/users))
+  
+* in the GitHub release notes, there is a list of all contributors, who contributed to the add-on (without mentioning what has been contributed).  
+  If all contributors were already credited in the changelog above, this _may_ be omitted.  
+  Alternatively, there can also be a changelog entry that credits all other contributors that were not credited in the other entries.
+
+\* What defines "major changes" is up to the add-on author and their sole responsibility to add to the changelog notes. Generally, don't write changelog entries yourself in PRs. (except of "new translation added", which you can easily copy from a past entry, as it always requires a changelog entry)
+
+### `CONTRIBUTORS` file
+
+The GitHub repo contains a file named `CONTRIBUTORS` in the root with all contributors.
+If you contribute (for the first time), feel free to add yourself.
+
+For now, it is sorted by time of contribution. (Add new entries at the bottom.)
+
+There is a separate section for "translations", where all translators are listed by the language they've translated. It is (should be) sorted alphabetically by the English name of the language.
+
+All items should list the name of the contributor, followed by their GitHub username in brackets. If there is only a GitHub username given, only this should be mentioned (without brackets).
+
+### Translator credit inside of add-on
+
+For add-ons, there should be an item named `translatorCredit`, which translators can translate to credit themselves. It can include _one_ link.
+
+Thus, there are several difficulties when multiple contributors translate one language. This is how you should translate the text:
+* If there is only one translator (yourself): Credit them and link to their user profile or similar. 
+  > This add-on has been translated into English by Name Name ([@username](https://github.com/users)).
+  
+* If there is one "main" translator and some minor contributions: Credit the main one and link to their user profile and add the text "and others" _outside_ of the link. 
+  > This add-on has been translated into English by Name Name ([@username](https://github.com/users)) and others.
+  
+* If there are multiple translators, where each one changed a significant portion: Link to the the exact line of the language in the [`CONTRIBUTING` file](#contributors-file) in the GitHub repo, where all translators are listed, and…
+  * Up to three translators: List them all.
+    > This add-on has been translated into English [by Name1 (@username1), Name2 (@username2) and @username3](https://github.com/TinyWebEx/common/blob/master/CONTRIBUTORS#l10).
+    
+  * More than three translators: Just write something like "by several translators", so the link text stays useful.
+    > This add-on has been translated into English [by several translators](https://github.com/TinyWebEx/common/blob/master/CONTRIBUTORS#l10).
+    
+In the first two cases, only link the actual GitHub username.  
+For each name, you can mention both the name and/or GitHub username the in the same way as in the [`CONTRIBUTING` file](#contributors-file). This is your decision.  
+Obviously, also translate the language name. The Frensh translation should e.g. say the "add-on has been translated into French".
+
+To also credit all other contributors, which cannot all be listed in the space, there is also always a link to the whole [`CONTRIBUTING` file](#contributors-file), but this is static and should just be translated as usual. This link _may_ be left out, if no one yet contributed to the add-on.
