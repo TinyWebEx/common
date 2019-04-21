@@ -63,7 +63,7 @@ Please see the [whole Localizer module doc](https://github.com/TinyWebEx/Localiz
 
 ### Further notes
 
-* Please try to use the typographically correct characters of your language. E.g. use the Unicode char `…` instead of `...`.
+* Please try to use the typographically correct characters of your language. E.g. use the Unicode char `…` instead of `...` for three dots.
 * See also [how to credit yourself in the localization file](#translator-credit-inside-of-add-on).
 
 ## Coding
