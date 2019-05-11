@@ -29,6 +29,9 @@ Note that the `amoScreenshots.csv` file refers to the screenshot descriptions yo
 
 You can also translate the changelogs there. (but see [this tip about that](#what-not-to-translate))
 
+Important notes:
+* The `amoSummary.txt` must **at most** be 250 chars long! This is a limitation of AMO. Please try to fit all the original text in there, anyway. Usually you should however also try to utilize these 250 chars almost fully.
+
 ### Translation of wiki
 
 This project has a _wiki_ on GitHub. To translate it, just create the appropriate wiki pages in your local language.
@@ -46,7 +49,7 @@ There are some small tips that can help you when translating.
 1. You do _not_ need to translate all old changelog entries, if that is too much work. (It's unlikely users even look at these old ones.) Rather focus on the latest changelog then (sometimes one is also kept for the current development state).
 2. Speaking of the changelogs, you do **not need to translate** any changelog Markdown files! I do so (and you can too), so one can just generate the corresponding HTML files out of the markdown ones. But, as the Markdown syntax is only used in GitHub release notes, which are only available in English, you do not have to do so. 
 3. Often, you can copy/take translations from [other add-ons](https://addons.mozilla.org/firefox/user/rugkme/), as common things like usual error messages (etc.) have already been translated by other's in one of my add-ons. Currently, [the _Offline QR Code Generator_](https://github.com/rugk/offline-qr-code/) has the most translations.
-  Just pay attention to [credit the translators](#translator-credit-inside-of-add-on) correctly then. And please add a note to the PR description, so I know what you've done.
+  Just pay attention to [credit the translators](#translator-credit-inside-of-add-on) correctly then. And please add a note to the PR description stating that you've included a translation from someone else, so I know what you've done.
 
 ### Internationalisation of HTML files
 
