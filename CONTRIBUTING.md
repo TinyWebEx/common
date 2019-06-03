@@ -183,10 +183,10 @@ There are several places:
 
 ### `CONTRIBUTORS` file
 
-The GitHub repo contains a file named `CONTRIBUTORS` in the root with all contributors.
+The GitHub repo contains a file named `CONTRIBUTORS(.md)` in the root with all contributors.
 If you contribute (for the first time), feel free to add yourself.
 
-For now, it is sorted by time of contribution. (Add new entries at the bottom.)
+It is (should be) sorted alphabetically.
 
 There is a separate section for "translations", where all translators are listed by the language they've translated. It is (should be) sorted alphabetically by the English name of the language.
 
