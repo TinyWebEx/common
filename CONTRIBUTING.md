@@ -114,7 +114,7 @@ Apart from that, there are some simple rules.
 * There is a loose width limit at 80 characters, except for HTML and text/Markdown files. HTML files should always be intended properly. "Loose limit" means I won't care if you add 3-5 characters more, but when the line becomes too long, you better split it on two lines, if it makes sense. Always prefer readability over such an arbitrary limit, however, so e.g. JSDOC can always be split onto the next line, while JS commands sometimes look better on a single line, even though it may be _a bit_ longer.
 
 #### JS
-* Use EcmaScript 2017. (so e.g. `await`/`async` are fine) Basically everything, which is supported by Firefox >= 60 can also be used.
+* Use EcmaScript 2017. (so e.g. `await`/`async` are fine) Basically everything, which is supported by Firefox >= 60 can also be used (some add-ons can even use more up-to-date versions, have a look at the `manifest.json`).
 * We use [ESLint](https://eslint.org/). Please do use it to lint your files. It specifies all coding guidelines. If you use NodeJS, you can install the packages `eslint` and (if you want to write unit tests) `eslint-plugin-mocha` (see [writing tests](#writing-tests)).
   When something is not specified just use common sense and look at how other code in the project is written.
 * Especially, as we use a [CSP](src/manifest.json), please do _not_:
