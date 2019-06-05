@@ -129,7 +129,7 @@ Apart from that, there are some simple rules.
 * If you write real constants (i.e. `const` variables not written in functions, if their scope e.g. is a "module" or whole project, and they do represent static _literals_, e.g. simple variable types, such as integers, strings, but not selected HTML elements), do write them in UPPERCASE_LETTERS (as "real" constants are usually written in other languages), otherwise always write variable names in camelCase.
 * Objects, which should never be modified, should be frozen with `Object.freeze`, so they cannot be modified.
 * Do _not_ use magic numbers. Use (global/module-scoped) constants instead.
-* Do log important things you do in your code. Use the `Logger` for that. In production code no `console.log()` or similar should appear.
+* Do log important things you do in your code. Just use the usual console functions, i.e. `console.log()`.
 * Avoid modifying the DOM in JS. The whole structure of the add-on is so simple it should be represented in the HTML file. Remember that HTML files should represent the (whole) structure of the "website".
 * Avoid naming variables by their variable type only, e.g. `element`. Instead try to use the same variable name for an element whenever you refer to it in the source code. E.g. name a message box `elMessage`, so one can search for it in the whole code base to find out, where it is touched.
 * You should start the variable names of HTML elements with `el` as they are not obvious to differentiate from other variable names. Otherwise, do not prepend the variable type to the variable name.
