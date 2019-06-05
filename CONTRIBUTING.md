@@ -134,6 +134,7 @@ Apart from that, there are some simple rules.
 * Avoid naming variables by their variable type only, e.g. `element`. Instead try to use the same variable name for an element whenever you refer to it in the source code. E.g. name a message box `elMessage`, so one can search for it in the whole code base to find out, where it is touched.
 * You should start the variable names of HTML elements with `el` as they are not obvious to differentiate from other variable names. Otherwise, do not prepend the variable type to the variable name.
 * Avoid anonymous functions, which have no name (i.e. not really assigned) unless they do really do simple things. In most cases bigger anonymous functions are a point one may (need to) refactor. Consider introducing some (private) function in the module instead, so the function is described, documented and maybe re-used.
+  You can use short [arrow functions](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Arrow_functions) inside of other functions, if needed, but please don't overuse them! Generally, don't use them in "module scope" (e.g. to avoid writing JSDOC), but only inside of functions and break it up into a bigger function in "module scope" if it gets too complicated.
 
 ### CSS
 
