@@ -34,7 +34,7 @@ Important notes:
 
 ### Translation of wiki
 
-This project has a _wiki_ on GitHub. To translate it, just create the appropriate wiki pages in your local language.
+If the project has a _wiki_ on GitHub, you can usually translate it, just create the appropriate wiki pages in your local language.
 As GitHub does not allow multiple pages to have the same name, you have to adjust it. If the title is different in your language, you can just rename it. If it collides with another existing file, e.g. if the title is the same as in English, append the title with ` (<local language>)`, where `<local language>` is a placeholder for a proper identifier for your language that makes sense to your users. This identifier should be readable by humans and not be an abbreviation as it is displayed as a title on GitHub (i.e. _not_ `de_DE`) and it should also be translated (i.e. _not_ `German`, but `deutsch`). Capitalization and similar things should thus follow your local language. Also the appendix/bracket style (i.e. `(…)`) should follow your local Langauge. As such, if you e.g. always prefix such additional notes, then do it here, too.
 Generally said, the whole title must just be translated, but does have to be unique.
 
