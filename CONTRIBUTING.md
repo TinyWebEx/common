@@ -1,13 +1,14 @@
 # Contributing
 
 Nice to see you want to contribute! :+1: :tada:
-Please have a look at this guide to know what you are changing.
+Please have a look at this guide to know what and how to best change things, get tips on how to get started and (best) practices to follow.
 
 **Table of contents:**
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Contributing](#contributing)
+	- [Need ideas?](#need-ideas)
 	- [Translations](#translations)
 		- [Translation style](#translation-style)
 		- [Translation of add-on listings](#translation-of-add-on-listings)
@@ -30,6 +31,21 @@ Please have a look at this guide to know what you are changing.
 		- [Translator credit inside of add-on](#translator-credit-inside-of-add-on)
 
 <!-- /TOC -->
+
+## Need ideas?
+
+Don't have any idea what to take up? In each repo you can usually find issued tagged with “good first issue” or similar.
+However, of course, feel free to take on any issue (that is not claimed or assigned to someone else).
+
+Here are some add-on's, which which may need work:
+
+* [Awesome Emoji Generator](https://github.com/rugk/awesome-emoji-picker/contribute)
+* [Offline QR Code Generator](https://github.com/rugk/offline-qr-code/contribute)
+* [Mastodon Simplified Federation](https://github.com/rugk/mastodon-simplified-federation/contribute)
+* [How did I get here?](https://github.com/rugk/how-did-i-get-here/contribute)
+* [Dark Website Forcer](https://github.com/rugk/website-dark-mode-switcher/contribute)
+
+There is also [an overview over all good first issues in other add-on repos](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3Arugk+user%3ATinyWebEx+label%3A%22good+first+issue%22). Also [check out the libraries used by this project](https://github.com/TinyWebEx).
 
 ## Translations
 
