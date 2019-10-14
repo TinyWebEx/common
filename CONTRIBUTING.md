@@ -1,4 +1,35 @@
-Nice to see you want to contribute! :+1:
+# Contributing
+
+Nice to see you want to contribute! :+1: :tada:
+Please have a look at this guide to know what you are changing.
+
+**Table of contents:**
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Contributing](#contributing)
+	- [Translations](#translations)
+		- [Translation style](#translation-style)
+		- [Translation of add-on listings](#translation-of-add-on-listings)
+		- [Translation of wiki](#translation-of-wiki)
+		- [What _not_ to translate](#what-not-to-translate)
+		- [Internationalisation of HTML files](#internationalisation-of-html-files)
+		- [Further notes](#further-notes)
+	- [Coding](#coding)
+		- [Cloning](#cloning)
+		- [Getting started](#getting-started)
+		- [Coding guidelines](#coding-guidelines)
+		- [General](#general)
+			- [JS](#js)
+		- [CSS](#css)
+		- [Tests](#tests)
+			- [Writing tests](#writing-tests)
+		- [Various stuff](#various-stuff)
+	- [Credit](#credit)
+		- [`CONTRIBUTORS` file](#contributors-file)
+		- [Translator credit inside of add-on](#translator-credit-inside-of-add-on)
+
+<!-- /TOC -->
 
 ## Translations
 
