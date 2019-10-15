@@ -153,7 +153,7 @@ If you have made your changes, please ensure that the unit tests still run. See 
 
 ### Coding guidelines
 
-As for simple indentation issues, please refer to the _editorconfig file_. Just use a [plugin](http://editorconfig.org/#download), if needed, for your editor.
+As for simple indentation issues, please refer to the _editorconfig file_. Just use a [plugin](https://editorconfig.org/#download), if needed, for your editor.
 
 Apart from that, there are some simple rules.
 
