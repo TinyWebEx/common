@@ -113,8 +113,9 @@ Please see the [whole Localizer module doc](https://github.com/TinyWebEx/Localiz
 
 ### Further notes
 
-* Please try to use the typographically correct characters of your language. E.g. use the Unicode char `…` instead of `...` for three dots.
+* Please try to use the typographically correct characters of your language. E.g. use the Unicode char `…` instead of `...` for three dots or quotation characters like `“”` instead of `""`.
 * See also [how to credit yourself in the localization file](#translator-credit-inside-of-add-on).
+* For finding translations for technical terms a good resource may be [the Microsoft terminology search tool](https://www.microsoft.com/language/Search). Still keep in mind, however, that the terms in add-ons may be different.
 
 ## Coding
 
