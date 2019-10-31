@@ -49,7 +49,7 @@ There is also [an overview over all good first issues in other add-on repos](htt
 
 ## Translations
 
-It would be great if you can contribute your translations! You can either translate the JSON files directly or use [this online translator service](https://lusito.github.io/web-ext-translator/).
+It would be great if you can contribute your translations/localisations! You can either translate the JSON files directly or use [this online translator service](https://lusito.github.io/web-ext-translator/).
 
 **Manually:** To translate it manually, go to `src/_locales/en` and copy the English (or any other existing language) `messages.json` file. (You could also use another source language if you want, but usually English is the best.) Create a new dir at `src/_locales` with the abbreviation of the language you want to translate.  
 **Web-ext-translator:** Go to [this page](https://lusito.github.io/web-ext-translator/) and translate it online. Download the result by clicking on "Export to ZIP" at the bottom.
@@ -57,7 +57,10 @@ It would be great if you can contribute your translations! You can either transl
 At the end, just submit a Pull Request with your changed files.
 Of course, you can (and should) improve existing translations.
 
-For more details, [see the official docs](https://developer.mozilla.org/Add-ons/WebExtensions/Internationalization#Providing_localized_strings_in__locales).
+For more details, [see the official docs](https://developer.mozilla.org/Add-ons/WebExtensions/Internationalization#Providing_localized_strings_in__locales). There, it is e.g. explained how to use placeholders (these `$THING$` text in the translation).  
+Additionally, if you find ampersands in the translation, [under “parameters“ -> “title” on this page](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/menus/create#Parameters) it is explained what they mean.
+They are basically only used in context menu items and denote the “access key” that you can press on the keyboard to access the menu.
+Please try to use a suitable one there that is available in your language, does not conflict with other ones of Firefox and otherwise fall back on specifying an arbitrary one in brackets, i.e. e.g. “do something (&Q)”, so the keyboard can at least still be used/pressed.
 
 ### Translation style
 
