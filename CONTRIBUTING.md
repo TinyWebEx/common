@@ -124,7 +124,7 @@ Please see the [whole Localizer module doc](https://github.com/TinyWebEx/Localiz
 
 ### Cloning
 
-**Important:** As this project uses [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) when you clone it, you _have to_ clone it with them, e.g. [like this](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules#4438292):
+**Important:** As this project uses [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) when you clone it, you _have to_ clone it with them, e.g. [like this](https://stackoverflow.com/a/4438292/5008962):
 
 ```sh
 git clone --recurse-submodules <project>
