@@ -75,6 +75,9 @@ Due to the way we use static ES6 modules, there are some inconveniences I have t
 These modules are used in production by several add-ons.
 
 Most notably:
-* [Offline Qr Code Generator](https://github.com/rugk/offline-qr-code/)
+* [Offline QR Code Generator](https://github.com/rugk/offline-qr-code/)
+* [Awesome Emoji Picker](https://github.com/rugk/how-did-i-get-here/contribute)
+* [Mastodon Simplified Federation](https://github.com/rugk/mastodon-simplified-federation/contribute)
+* [Dark Mode Website Switcher](https://github.com/rugk/website-dark-mode-switcher/contribute)
 
 As such, I re-use things like the [CONTRIBUTING.md](./CONTRIBUTING.md) in their, respectively link to it.
