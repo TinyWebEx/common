@@ -76,8 +76,8 @@ These modules are used in production by several add-ons.
 
 Most notably:
 * [Offline QR Code Generator](https://github.com/rugk/offline-qr-code/)
-* [Awesome Emoji Picker](https://github.com/rugk/how-did-i-get-here/contribute)
-* [Mastodon Simplified Federation](https://github.com/rugk/mastodon-simplified-federation/contribute)
-* [Dark Mode Website Switcher](https://github.com/rugk/website-dark-mode-switcher/contribute)
+* [Awesome Emoji Picker](https://github.com/rugk/how-did-i-get-here/)
+* [Mastodon Simplified Federation](https://github.com/rugk/mastodon-simplified-federation/)
+* [Dark Mode Website Switcher](https://github.com/rugk/website-dark-mode-switcher/)
 
 As such, I re-use things like the [CONTRIBUTING.md](./CONTRIBUTING.md) in their, respectively link to it.
