@@ -147,7 +147,7 @@ git submodule update --init --recursive
 
 Developing/improving a WebExtension add-on is easy! **If you have ever made some stuff with HTML/CSS/JS you can do that, too!** It's built on the same technologies.
 
-* **Debug extension:** Just visit `about:debugging` and load the extension by selecting any file from the Web Extensions' dir. In our case, e.g. select `manifest.json` from the `src` dir. [See a video here](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#Installing).
+* **Debug extension:** Just visit `about:debugging` and load the extension by selecting any file from the Web Extensions' dir. In our case, e.g. select `manifest.json` from the `src` dir. [See a video here](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
 * **Change code:** When it is loaded you can just change the code (and press "Reload", if needed) and you'll see the result. That is it!
 
 These are just some small hints. For a complete guide, more tutorials and documentation, please definitively check out https://extensionworkshop.com/.
