@@ -201,7 +201,13 @@ We use _Mocha_, _Chai_ and _Sinon_ for unit tests. However, you do not need to c
 * You'll see the `manifest.json`. Now change the address in the address bar to `moz-extension://<uuid here>/tests/index.html`. This is the test site, which then runs the tests automatically!
 * You do not need to install anything, test libraries are downloaded from the web, automatically. If that does not work, you may have the wrong `manifest.json`, which does not allow loading of these test frameworks. Make sure you have the dev version (`dev.json` in `scripts/manifests/`) loaded in the `src` dir of this add-on.
 
+For Chrome/ium browsers, do it similarly. There you need to copy the extension ID from the `chrome://extensions` page and open the URL like this, e.g.
+```
+chrome-extension://<id here>/tests/index.html
+```
+
 Tests are defined in the `src/tests/` dir.
+Note that due to how projects depend on each other, you may often need to place the `manifest.json`  in the directory above the project's one, install all dependencies besides of it and then open the `[…]://<id here>/ProjectName/tests/index.html` file instead of `[…]://<id here>/tests/index.html`.
 
 Due to the fact that we use ES6 modules, [Mocha cannot yet run the tests on the command line](https://github.com/mochajs/mocha/issues/3006) though. We also do use the browser DOM and similar features, so running the tests outside of the browser, is not intended to be supported.
 
