@@ -27,7 +27,7 @@ Please have a look at this guide to know what and how to best change things, get
 			- [Writing tests](#writing-tests)
 		- [Various stuff](#various-stuff)
 	- [Credit](#credit)
-		- [`CONTRIBUTORS` file](#contributors-file)
+		- [`CONTRIBUTORS.md` file](#contributors-md-file)
 		- [Translator credit inside of add-on](#translator-credit-inside-of-add-on)
 
 <!-- /TOC -->
@@ -236,7 +236,7 @@ There are several places:
 
 \* What defines "major changes" is up to the add-on author and their sole responsibility to add to the changelog notes. Generally, don't write changelog entries yourself in PRs. (except of "new translation added", which you can easily copy from a past entry, as it always requires a changelog entry)
 
-### `CONTRIBUTORS` file
+### `CONTRIBUTORS.md` file
 
 The GitHub repo contains a file named `CONTRIBUTORS(.md)` in the root with all contributors.
 If you contribute (for the first time), feel free to add yourself.
@@ -258,9 +258,9 @@ Thus, there are several difficulties when multiple contributors translate one la
 * If there is one "main" translator and some minor contributions: Credit the main one and link to their user profile and add the text "and others" _outside_ of the link. 
   > This add-on has been translated into English by Name Name ([@username](https://github.com/users)) and others.
   
-* If there are multiple translators, where each one changed a significant portion: Link to the the exact line of the language in the [`CONTRIBUTING` file](#contributors-file) in the GitHub repo, where all translators are listed, and…
+* If there are multiple translators, where each one changed a significant portion: Link to the the exact line of the language in the [`CONTRIBUTING.md` file](#contributors-md-file) in the GitHub repo, where all translators are listed, and…
   * Up to three translators: List them all.
-    > This add-on has been translated into English [by Name1 (@username1), Name2 (@username2) and @username3](https://github.com/TinyWebEx/common/blob/master/CONTRIBUTORS#l10).
+    > This add-on has been translated into English [by Name1 (@username1), Name2 (@username2) and @username3](https://github.com/TinyWebEx/common/blob/master/CONTRIBUTORS.md#l10).
     
   * More than three translators: Just write something like "by several translators", so the link text stays useful.
     > This add-on has been translated into English [by several translators](https://github.com/TinyWebEx/common/blob/master/CONTRIBUTORS#l10).
