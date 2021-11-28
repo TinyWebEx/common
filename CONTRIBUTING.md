@@ -85,7 +85,7 @@ Important notes:
 ### Translation of wiki
 
 If the project has a _wiki_ on GitHub, you can usually translate it, just create the appropriate wiki pages in your local language.
-As GitHub does not allow multiple pages to have the same name, you have to adjust it. If the title is different in your language, you can just rename it. If it collides with another existing file, e.g. if the title is the same as in English, append the title with ` (<local language>)`, where `<local language>` is a placeholder for a proper identifier for your language that makes sense to your users. This identifier should be readable by humans and not be an abbreviation as it is displayed as a title on GitHub (i.e. _not_ `de_DE`) and it should also be translated (i.e. _not_ `German`, but `deutsch`). Capitalization and similar things should thus follow your local language. Also the appendix/bracket style (i.e. `(…)`) should follow your local Langauge. As such, if you e.g. always prefix such additional notes, then do it here, too.
+As GitHub does not allow multiple pages to have the same name, you have to adjust it. If the title is different in your language, you can just rename it. If it collides with another existing file, e.g. if the title is the same as in English, append the title with ` (<local language>)`, where `<local language>` is a placeholder for a proper identifier for your language that makes sense to your users. This identifier should be readable by humans and not be an abbreviation as it is displayed as a title on GitHub (i.e. _not_ `de_DE`) and it should also be translated (i.e. _not_ `German`, but `deutsch`). Capitalization and similar things should thus follow your local language. Also the appendix/bracket style (i.e. `(…)`) should follow your local language. As such, if you e.g. always prefix such additional notes, then do it here, too.
 Generally said, the whole title must just be translated, but does have to be unique.
 
 If you are done with that, do not forget to edit the `_Sidebar` file and add your language. Keep the English version at the top. The languages afterwards should be kept in alphabetical order. Do use the English name of your language as a heading and link to your newly created pages using their local name.
@@ -147,7 +147,7 @@ git submodule update --init --recursive
 
 Developing/improving a WebExtension add-on is easy! **If you have ever made some stuff with HTML/CSS/JS you can do that, too!** It's built on the same technologies.
 
-* **Debug extension:** Just visit `about:debugging` and load the extension by selecting any file from the Web Extensions' dir. In our case, e.g. select `manifest.json` from the `src` dir. [See a video here](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#Installing).
+* **Debug extension:** Just visit `about:debugging` and load the extension by selecting any file from the Web Extensions' dir. In our case, e.g. select `manifest.json` from the `src` dir. [See a video here](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
 * **Change code:** When it is loaded you can just change the code (and press "Reload", if needed) and you'll see the result. That is it!
 
 These are just some small hints. For a complete guide, more tutorials and documentation, please definitively check out https://extensionworkshop.com/.
@@ -201,7 +201,13 @@ We use _Mocha_, _Chai_ and _Sinon_ for unit tests. However, you do not need to c
 * You'll see the `manifest.json`. Now change the address in the address bar to `moz-extension://<uuid here>/tests/index.html`. This is the test site, which then runs the tests automatically!
 * You do not need to install anything, test libraries are downloaded from the web, automatically. If that does not work, you may have the wrong `manifest.json`, which does not allow loading of these test frameworks. Make sure you have the dev version (`dev.json` in `scripts/manifests/`) loaded in the `src` dir of this add-on.
 
+For Chrome/ium browsers, do it similarly. There you need to copy the extension ID from the `chrome://extensions` page and open the URL like this, e.g.
+```
+chrome-extension://<id here>/tests/index.html
+```
+
 Tests are defined in the `src/tests/` dir.
+Note that due to how projects depend on each other, you may often need to place the `manifest.json`  in the directory above the project's one, install all dependencies besides of it and then open the `[…]://<id here>/ProjectName/tests/index.html` file instead of `[…]://<id here>/tests/index.html`.
 
 Due to the fact that we use ES6 modules, [Mocha cannot yet run the tests on the command line](https://github.com/mochajs/mocha/issues/3006) though. We also do use the browser DOM and similar features, so running the tests outside of the browser, is not intended to be supported.
 
