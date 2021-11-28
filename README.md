@@ -10,6 +10,7 @@ A full JSDOC documentation and human-readable overview documentation is also ava
 
 ## Overview
 
+* **[CommonCss](https://github.com/TinyWebEx/CommonCss)** – Some common CSS files for styles throughout the add-on and other modules.
 * **[AddonSettings](https://github.com/TinyWebEx/AddonSettings)** – Retrieve and save your add-on settings easier, providing default values and [managed options](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/managed).
 * **[AutomaticSettings](https://github.com/TinyWebEx/AutomaticSettings)** – Define all your settings for your options in HTML and they are automatically loaded and saved on each change. Supports everything which _AddonSettings_ supports, too. (default options, managed options)
 * **[BrowserCommunication](https://github.com/TinyWebEx/BrowserCommunication)** – module for showing messages of all sort, supports pre-defined or custom message types.
