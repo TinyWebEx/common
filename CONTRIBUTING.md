@@ -80,7 +80,7 @@ Note that the `amoScreenshots.csv` file refers to the screenshot descriptions yo
 You can also translate the changelogs there. (but see [this tip about that](#what-not-to-translate))
 
 Important notes:
-* The `amoSummary.txt` must **at most** be 250 chars long! This is a limitation of AMO. Please try to fit all the original text in there, anyway. Usually you should however also try to utilize these 250 chars almost fully.
+* The `amoSummary.txt` must **at most** be 250 chars long! This is a [limitation of AMO](https://extensionworkshop.com/documentation/develop/create-an-appealing-listing/#make-sure-your-summary-is-just-long-enough). Please try to fit all the original text in there, anyway. Usually you should however also try to utilize these 250 chars almost fully.
 
 ### Translation of wiki
 
