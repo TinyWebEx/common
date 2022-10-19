@@ -25,6 +25,7 @@ Please have a look at this guide to know what and how to best change things, get
 		- [CSS](#css)
 		- [Tests](#tests)
 			- [Writing tests](#writing-tests)
+		- [Internationalisation (I18n)](#internationalisation-i18n)
 		- [Various stuff](#various-stuff)
 	- [Credit](#credit)
 		- [`CONTRIBUTORS.md` file](#contributors-md-file)
