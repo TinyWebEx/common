@@ -117,6 +117,7 @@ Please see the [whole Localizer module doc](https://github.com/TinyWebEx/Localiz
 
 ### Further notes
 
+* See the part on [Internationalisation (I18n)](#internationalisation-i18n) for how to code your code, so that it is localisable, i.e. people can translate it.
 * Please try to use the typographically correct characters of your language. E.g. use the Unicode char `…` instead of `...` for three dots or quotation characters like `“”` instead of `""`.
 * See also [how to credit yourself in the localization file](#translator-credit-inside-of-add-on).
 * For finding translations for technical terms a good resource may be [the Microsoft terminology search tool](https://www.microsoft.com/language/Search). Still keep in mind, however, that the terms in add-ons may be different.
@@ -221,6 +222,13 @@ Here some simple rules:
 * As for chai, write them [in the assert syntax](http://www.chaijs.com/api/assert/).
 * Always use `.chai.assert.strictEqual` and not only `.equal` for comparison in tests, unless there is a specific reason not to do so. This way, you also do not need to check for the variable type, yet again. Similarly usually prefer `.calledWithExactly` instead of `.calledWith`.
 * If you need to attach/inject HTML code for your test into the HTML page, please use the `htmlMock.js` module provided in the test directory. Generally said, there are some modules from that dir that can be useful for testing particular features. :smile:
+
+### Internationalisation (I18n)
+
+If you adjust `.html` files or somehow present text to the user, please make sure make all strings localizable. That process [is called internationalisation or short `i18n`](https://blog.mozilla.org/l10n/2011/12/14/i18n-vs-l10n-whats-the-diff/).
+
+If you adust `.js` files, you can [follow the official WebExtension guide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization) on how that is done. Basically, you need to [define the translations in a `message.json` file](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization#providing_localized_strings_in__locales) and then [retrieve these using `browser.i18n.getMessage`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization#retrieving_message_strings_from_javascript).  
+For `.html` files, [we generally use a tiny library called `Localiser`](https://github.com/TinyWebEx/Localizer) that is always included and allows you to localize HTML parts, too, with the `data-i18n` attribute. Again here, what matters is to place all the translations into the `message.json` file – **even the English language strings**. They may just be copied, but they provide the basis for everyone else to [translate the extension](#translations).
 
 ### Various stuff
 
