@@ -59,7 +59,7 @@ At the end, just submit a Pull Request with your changed files.
 Of course, you can (and should) improve existing translations.
 
 For more details, [see the official docs](https://developer.mozilla.org/Add-ons/WebExtensions/Internationalization#Providing_localized_strings_in__locales). There, it is e.g. explained how to use placeholders (these `$THING$` text in the translation).  
-Additionally, if you find ampersands in the translation, [under “parameters“ -> “title” on this page](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/menus/create#Parameters) it is explained what they mean.
+Additionally, if you find ampersands (`&`) in the translation, [on this page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus/create#title) it is explained what they mean.
 They are basically only used in context menu items and denote the “access key” that you can press on the keyboard to access the menu.
 Please try to use a suitable one there that is available in your language, does not conflict with other ones of Firefox and otherwise fall back on specifying an arbitrary one in brackets, i.e. e.g. “do something (&Q)”, so the keyboard can at least still be used/pressed.
 
