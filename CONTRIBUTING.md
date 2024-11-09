@@ -62,6 +62,7 @@ For more details, [see the official docs](https://developer.mozilla.org/Add-ons/
 Additionally, if you find ampersands (`&`) in the translation, [on this page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/menus/create#title) it is explained what they mean.
 They are basically only used in context menu items and denote the “access key” that you can press on the keyboard to access the menu.
 Please try to use a suitable one there that is available in your language, does not conflict with other ones of Firefox and otherwise fall back on specifying an arbitrary one in brackets, i.e. e.g. “do something (&Q)”, so the keyboard can at least still be used/pressed.
+If you want to try it out first, [here is an example web extension](https://github.com/mdn/webextensions-examples/tree/main/menu-accesskey-visible) that shows how that feature is used.
 
 ### Translation style
 
